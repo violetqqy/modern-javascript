@@ -4,6 +4,7 @@
  */
 
 'use strict';
+
 var obj1 = {
   a: 7,
   get b() {

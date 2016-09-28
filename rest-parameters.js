@@ -6,13 +6,13 @@
 
 'use strict';
 
-// printArguments(1, 2, 3);
+printArguments(1, 2, 3);
 
-// function printArguments(...arges) {
-//   arges.forEach(function(arg) {
-//     console.log('rest arges:', arg);
-//   })
-// }
+function printArguments(...arges) {
+  arges.forEach(function(arg) {
+    console.log('rest arges:', arg);
+  })
+}
 
 // eq
 printArguments1(1, 2, 3);
@@ -24,12 +24,12 @@ function printArguments1() {
   })
 }
 
-// printObjects('hello', { name: 'PatrickJS' }, { name: 'Scott' }, { name: 'Mike' });
+printObjects('hello', { name: 'PatrickJS' }, { name: 'Scott' }, { name: 'Mike' });
 
-// function printObjects(prefix, ...arges) {
-//   // let arges = [].slice.call(arguments, 0);
-//   arges.forEach(function(arg) {
-//     console.log('argument', arg);
-//     console.log(prefix, arg);
-//   })
-// }
+function printObjects(prefix, ...arges) {
+  // let arges = [].slice.call(arguments, 0);
+  arges.forEach(function(arg) {
+    // console.log('argument', arg);
+    console.log(prefix, arg);
+  })
+}
